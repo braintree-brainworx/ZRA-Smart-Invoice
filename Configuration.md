@@ -28,6 +28,12 @@ Before using the Braintree ZRA Smart Invoice Connector, you need to set up and c
 5. Lastly, **Enable** the integration
 6. If you want to host the list of commodity codes locally in the database, you can leave the **Use Web Service for commodity lookup** field disabled. Not all service providers do, but if the chosen Service Provider does support commodity code lookup, you can enable this feature.
 
+#### Additional Integration Setup fields:
+
+- **Prefix on Purchase Description**: Adds the line sequence number as a prefix to Purchase Line descriptions.
+- **Prefix on Sales Description**: Adds the line sequence number as a prefix to Sales Line descriptions.
+- **Purch. Accept Duplicate Response**: Treats duplicate purchase invoice responses from Fiscal Edge as successful integrations. (The purchase api sometimes responds with a duplicate response even when the integration was successful, this setting allows the system to treat those responses as successful integrations instead of failed ones.)
+
 
 ![image002](./docs/images/image002.png)
 
