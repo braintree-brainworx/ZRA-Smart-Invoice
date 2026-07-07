@@ -1,5 +1,6 @@
 ## <a name="_toc178688687"></a>Setup and Configuration
 
+- [Activation](#activation)
 - [Integration Setup](#integration-setup)
 - [Commodity Codes](#commodity-codes)
 - [ZRA VAT Types](#zra-vat-types)
@@ -12,21 +13,39 @@
 Before using the Braintree ZRA Smart Invoice Connector, you need to set up and configure the system. This involves:
 
 - Installing the extension in your Business Central environment
+- Licensing the extension with a valid license key
 - Configuring the system settings, such as the ZRA tax code and integration setup
 - Setting up user accounts and permissions
 
 >The following system settings need to be configured.
 
+### <a name="_toc178688687"></a>Activation
+
+In Business Central, search for and open “Braintree App Licenses”
+
+ ![activate1](./docs/images/activation-image1.png)
+
+1.	Enter your e-mail address
+2.	Select the PowerFlow entry
+3.	Click Request Subscription/Trial License
+
+We will activate an evaluation license and send it to the email address you specified. The mail will contain a license key. Copy that license key then return to the Braintree App Licenses.
+
+ ![activate2](./docs/images/activation-image2.png)
+
+1.	Select the PowerFlow entry
+2.	Click Update License Key
+3.	Enter the key on the page that opens and click Ok. You should get a message that states “Thank you for registering”
+
 ### <a name="_toc178688688"></a>Integration Setup
 
 1. Open the ZRA Integration Setup menu.
 2. Select the **Integration Service Provider**
-3. Confirm that the **Target API URL** is correct for the Service Provider
-4. Enter the following fields 
+3. Enter the following fields 
     1. **API Key**
     2. **SDC ID**
+4. **Production Enabled**: If disabled, it uses the sandbox environment for testing. If enabled, it uses the production environment for live transactions. You will not be able to enable this in a SaaS Sandbox environment.
 5. Lastly, **Enable** the integration
-6. If you want to host the list of commodity codes locally in the database, you can leave the **Use Web Service for commodity lookup** field disabled. Not all service providers do, but if the chosen Service Provider does support commodity code lookup, you can enable this feature.
 
 #### Additional Integration Setup fields:
 
@@ -40,7 +59,7 @@ Before using the Braintree ZRA Smart Invoice Connector, you need to set up and c
 >The user can download a copy of ZRA Codes used for mapping in the system as described in this document.
 
 ### <a name="_toc178688689"></a>Commodity Codes
-If service providers do not provide an API endpoint for the commodities, download and import the commodities list from the ZRA Item Category List.
+Import the commodities list from the ZRA Item Category List. This might take some time, as there is more than 149000 records in the list that has to be imported.
 
 ![image003](./docs/images/image003.png)
 
