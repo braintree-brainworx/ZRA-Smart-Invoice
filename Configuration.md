@@ -40,12 +40,11 @@ We will activate an evaluation license and send it to the email address you spec
 ### <a name="_toc178688688"></a>Integration Setup
 
 1. Open the ZRA Integration Setup menu.
-2. Select the **Integration Service Provider**
-3. Enter the following fields 
+2. Enter the following fields 
     1. **API Key**
     2. **SDC ID**
-4. **Production Enabled**: If disabled, it uses the sandbox environment for testing. If enabled, it uses the production environment for live transactions. You will not be able to enable this in a SaaS Sandbox environment.
-5. Lastly, **Enable** the integration
+3. **Production Enabled**: If disabled, it uses the sandbox environment for testing. If enabled, it uses the production environment for live transactions. You will not be able to enable this in a SaaS Sandbox environment.
+4. Lastly, **Enable** the integration
 
 #### Additional Integration Setup fields:
 
@@ -68,8 +67,8 @@ A predefined list is created when the extension is installed. This list can be m
 
 Description of fields:
 
-- **Code**: Unique identifier, used by most Service Providers
-- **Value**: A secondary identifier, used by some Service Providers.
+- **Code**: Unique identifier
+- **Value**: A secondary identifier.
 - **Blocked**: *Not used yet, reserved for future use.* 
 - **Requires recommended Retail Price**: When enabled, requires items to be registered with a recommended retail price when this code is used on a transaction.
 
@@ -86,12 +85,12 @@ Link Zambian Tax Codes to VAT Posting Setup. These are the Tax codes used on doc
 ![image006](./docs/images/image006.png)
 
 ### <a name="_toc178688693"></a>Reason Codes
-Link the predefined service provider reason codes to the Reason Codes in Business Central.
+Map the predefined reason codes to the Reason Codes in Business Central.
 
 ![image007](./docs/images/image007.png)
 
 ### <a name="_toc178688694"></a>Payment Methods
-Link supplier defined codes to the existing Payment Methods in Business Central.
+Map supplier defined codes to the existing Payment Methods in Business Central.
 
 ![image008](./docs/images/image008.png)
 
