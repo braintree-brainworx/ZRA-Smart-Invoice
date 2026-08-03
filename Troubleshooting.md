@@ -19,7 +19,7 @@
     - *Run once (foreground)*: If a Job Queue Entry exists, runs it immediately.
     - *Reset Validation Error*: For selected records, where the **Status** = *Validation Error*, sets the **Status** to *New*, and clears the **Status Message**. This will allow the "Create Job Queue Entries from Integration Entries" Job Queue Entry to pick them up and schedule them for sending.
   - Troubleshooting
-    - *Show Status Message*: Displays the detail of the **Status Message **in a pop-up dialog.
+    - *Show Status Message*: Displays the detail of the **Status Message** in a pop-up dialog.
     - *View Request Body*: If a Job Queue Entry exists, displays the content of the that has been parsed to be sent for processing.
     - *Recreate Integation Entry*: 
       - For all **Status**, except *Success*, it sets the **Status** = *New*, clears **Status Message** and attempts to create the Job Queue Entry. May result in Status being set to Validation Error if there are issues processing the data.
